@@ -32,6 +32,10 @@
               }
             ],
             "styles": [
+              {
+                "input": "node_modules/@group-ui/group-ui-angular/node_modules/@group-ui/group-ui/dist/group-ui/assets/themes/vwgroup/vwgroup.css",
+                "bundleName": "group-ui-angular-vwgroup-theme"
+              },
               "src/styles.scss"
             ],
             "scripts": []

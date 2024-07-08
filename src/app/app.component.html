@@ -19,18 +19,39 @@
     width: 100%;
     max-width: 700px;
     margin-bottom: 3rem;
+    flex-direction: column;
+    /* width: max-content; */
   }
 
-  @media screen and (max-width: 650px) {
-    .content {
-      flex-direction: column;
-      width: max-content;
-    }
+  .chip-live-demo {
+    /* padding: 120px 48px; */
+  }
+
+  .chip-live-demo groupui-chip {
+    margin-inline-end: 16px;
   }
 </style>
 
 <main class="main">
-  <div class="content">Content goes here ...</div>
+  <div class="content">
+    <groupui-text>
+      <h1>GroupUI</h1>
+      <p>
+        GroupUI is a collection of Angular components that can be used to build
+        web applications.
+      </p>
+    </groupui-text>
+
+    <div class="chip-live-demo container-border flex-center" brand="vwgroup">
+      <groupui-chip color="information" target="self" variant="primary"
+        >Lorem ipsum</groupui-chip
+      >
+      <groupui-chip color="information" target="self" variant="secondary"
+        >Lorem ipsum</groupui-chip
+      >
+      <groupui-chip color="warning" target="self">Warning</groupui-chip>
+    </div>
+  </div>
 </main>
 
 <router-outlet />
