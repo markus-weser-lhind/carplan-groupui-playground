@@ -1,7 +1,4 @@
 <style>
-  :host {
-  }
-
   main {
     width: 100%;
     min-height: 100%;
@@ -23,10 +20,6 @@
     /* width: max-content; */
   }
 
-  .chip-live-demo {
-    /* padding: 120px 48px; */
-  }
-
   .chip-live-demo groupui-chip {
     margin-inline-end: 16px;
   }
@@ -34,29 +27,39 @@
 
 <main class="main">
   <div class="content">
-    <div>Default text Lorem ipsum ...</div>
+    <div class="block">
+      <div>Default text Lorem ipsum ...</div>
+    </div>
 
-    <div class="box">
-      <groupui-headline font-variant="TheGroupHEAD-Light" serif="true" weight="light" heading="h1">Headline H1 Light</groupui-headline>
+    <div class="block border">
+      <groupui-headline
+        font-variant="TheGroupHEAD-Light"
+        serif="true"
+        weight="light"
+        heading="h1"
+        >Headline H1 Light</groupui-headline
+      >
       <groupui-headline heading="h1">Headline H1</groupui-headline>
     </div>
 
-    <groupui-text>
-      <h1>GroupUI</h1>
-      <p>
-        GroupUI is a collection of Angular components that can be used to build
-        web applications.
-      </p>
-    </groupui-text>
+    <div class="block border">
+      <groupui-text>
+        <h1>GroupUI</h1>
+        <p>
+          GroupUI is a collection of Angular components that can be used to
+          build web applications.
+        </p>
+      </groupui-text>
+    </div>
 
-    <p>
+    <div class="block border">
       <groupui-text size="theTypedTextSize" weight="theTypedWeight"
         >Some typed text here (doesn't seem to have any effect)
         ...</groupui-text
       >
-    </p>
+    </div>
 
-    <div class="chip-live-demo container-border flex-center" brand="vwgroup">
+    <div class="block border d-flex gap" brand="vwgroup">
       <groupui-chip color="information" target="self" variant="primary"
         >Lorem ipsum</groupui-chip
       >

@@ -1,0 +1,22 @@
+:host {
+  box-sizing: border-box;
+  --border-color: transparent;
+}
+
+.block {
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.border {
+  --border-color: lightgray;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.gap {
+  gap: 1rem;
+}
