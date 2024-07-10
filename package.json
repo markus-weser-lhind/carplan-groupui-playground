@@ -19,6 +19,7 @@
     "@angular/platform-browser-dynamic": "^18.0.0",
     "@angular/router": "^18.0.0",
     "@group-ui/group-ui-angular": "https://groupui.vwapps.run/latest/packages/group-ui-angular.tgz",
+    "@group-ui/group-ui-assets": "https://assets.groupui.vwapps.run/latest/packages/group-ui-assets.tgz",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
