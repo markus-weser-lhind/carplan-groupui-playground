@@ -49,6 +49,10 @@
                 "input": "node_modules/@group-ui/group-ui-angular/node_modules/@group-ui/group-ui/dist/group-ui/assets/themes/vwgroup/vwgroup.css",
                 "bundleName": "group-ui-angular-vwgroup-theme"
               },
+              {
+                "input": "node_modules/carplan-ui-components/src/assets/styles/styles.scss",
+                "bundleName": "carplan-ui-components"
+              },
               "src/styles.scss"
             ],
             "scripts": []
