@@ -83,6 +83,41 @@
       <img src="assets/vwgroup/check-48.svg" />
       <img src="assets/confidential-internal-l.svg" />
     </div>
+
+    <div class="block border">
+      <carplan-header-controls-bar>
+        <carplan-bar-button>
+          {{ label }}
+        </carplan-bar-button>
+      </carplan-header-controls-bar>
+    </div>
+
+    <div class="block border d-flex gap">
+      <carplan-card testId="testId" style="width: 390px">
+        <img
+          slot="head-top"
+          src="{{ imgSrc }}"
+          height="72px"
+          width="auto"
+          alt="{{ imgAlt }}"
+        />
+
+        <h4 slot="head-start">{{ cardTitle }}</h4>
+        <carplan-tag slot="head-start">{{ tag_1 }}</carplan-tag>
+        <carplan-tag slot="head-start">{{ tag_2 }}</carplan-tag>
+
+        <carplan-flat-icon-button slot="head-end" (click)="menuClick($event)" />
+        <carplan-tag
+          slot="head-end"
+          [variant]="variant"
+          iconStartName="notification"
+        >
+          {{ count }}
+        </carplan-tag>
+
+        <div slot="content">{{ content }}</div>
+      </carplan-card>
+    </div>
   </div>
 </main>
 
